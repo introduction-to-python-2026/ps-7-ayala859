@@ -1,27 +1,16 @@
+Dataset: California Housing Dataset
 
-Data Analysis Summary: California Housing Dataset
-Database Name: California Housing Dataset (Derived from the 1990 U.S. Census).
+Selected Features:
+- total_rooms
+- median_house_value  
+- housing_median_age
+- median_income
 
-Analyzed Columns:
+Correlation Results:
+- median_income & median_house_value: strong positive correlation
+- housing_median_age & median_house_value: weak correlation
+- total_rooms & median_house_value: weak positive correlation
 
-total_rooms: Total number of rooms within a block.
-
-housing_median_age: Median age of the houses in a block.
-
-median_income: Median income for households in a block.
-
-median_house_value: Median house price (Target Variable).
-
-Correlation Results
-Based on your correlation matrix and scatter plots, the following insights emerged:
-
-Strongest Predictor: There is a strong positive correlation (approximately 0.69) between Median Income and House Value. This indicates that as the wealth of the residents increases, house prices rise significantly.
-
-Moderate/Weak Link: Total Rooms has a slight positive correlation with price, but it is far less influential than income.
-
-Minimal Impact: Housing Median Age shows a very weak linear relationship with the house value in this specific dataset.
-
-Key Conclusion
-The primary driver of housing prices in California is the economic status of the residents (Median Income). If you were to build a machine learning model to predict home prices, income would be your most important feature.
-
-Note: You may have noticed a "line" of data points at the $500,000 mark in your scatter plots; this is because the dataset is capped at that price, which is a common characteristic of this specific database.
+Conclusion:
+Median income is the strongest predictor of house prices.
+Higher income areas tend to have more expensive houses.
